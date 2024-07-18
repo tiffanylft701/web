@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let users = [{name: 'John', age: 25}, {name: 'Mary', age: 30}, {name: 'Bob', age: 20}]
+      let newUsers  = []
+      users.forEach(a=>{
+        if (a.age > 20){
+            newUsers.push(a)
+        }
+      })
+      console.log(newUsers);
+      let newUsers2 = users.filter(a=>a.age>20)
+      console.log(newUsers2);
+      let newUsers3 = users.filter(a=>a.name==='Mary')
+      console.log(newUsers3);
+    </script>
+</body>
+</html>
